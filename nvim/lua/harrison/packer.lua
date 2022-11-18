@@ -1,4 +1,4 @@
--- Only required if you have packer configured as `opt`
+-- Only required if you have packer configured as `opt`packer
 vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
@@ -65,9 +65,6 @@ return require("packer").startup(function(use)
 	})
 	use({
 		"goolord/alpha-nvim",
-		config = function()
-			require("alpha").setup(require("alpha.themes.dashboard").config)
-		end,
 	})
 
 	--Themes
@@ -80,7 +77,7 @@ return require("packer").startup(function(use)
 		as = "catppuccin",
 		config = function()
 			require("catppuccin").setup({
-				flavour = "macchiato", -- mocha, macchiato, frappe, latte
+				flavour = "mocha", -- mocha, macchiato, frappe, latte
 			})
 			vim.api.nvim_command("colorscheme catppuccin")
 		end,
@@ -109,6 +106,7 @@ return require("packer").startup(function(use)
 
 	use({
 		"lukas-reineke/indent-blankline.nvim",
+		event = "VimEnter",
 		config = function()
 			require("indent_blankline").setup({
 				buftype_exclude = { "terminal" },
@@ -146,7 +144,9 @@ return require("packer").startup(function(use)
 		"akinsho/toggleterm.nvim",
 		tag = "*",
 		config = function()
-			require("toggleterm").setup()
+			require("toggleterm").setup({
+				open_mapping = [[<c-\>]],
+			})
 		end,
 	})
 end)
