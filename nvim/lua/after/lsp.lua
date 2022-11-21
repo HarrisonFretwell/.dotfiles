@@ -7,6 +7,16 @@ end
 
 local protocol = require("vim.lsp.protocol")
 
+vim.diagnostic.config({
+	virtual_text = false,
+	signs = true,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = false,
+})
+
+local function on_attach(_, bufnr) end
+
 -- TypeScript
 nvim_lsp.tsserver.setup({
 	on_attach = on_attach,
@@ -29,7 +39,7 @@ rt.setup({
 			-- Hover actions
 			vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
 			-- Code action groups
-			vim.keymap.set("n", "<Leader>cr", "<Cmd>RustRunnables<CR>", { buffer = bufnr, desc = "Runnables" })
+			vim.keymap.set("n", "<Leader>co", "<Cmd>RustRunnables<CR>", { buffer = bufnr, desc = "Runnables" })
 		end,
 	},
 })
@@ -38,7 +48,6 @@ local status, cmp = pcall(require, "cmp")
 if not status then
 	return
 end
-local lspkind = require("lspkind")
 
 cmp.setup({
 	snippet = {
@@ -59,6 +68,7 @@ cmp.setup({
 	formatting = {
 		format = lspkind.cmp_format({ with_text = false, maxwidth = 50 }),
 	},
+	window = {},
 })
 
 vim.cmd([[
