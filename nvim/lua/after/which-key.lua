@@ -1,19 +1,24 @@
-wk = require("which-key")
-
+local wk = require("which-key")
 
 wk.register({
 	f = {
-		name="Files"
+		name = "Files",
+	},
+	p = {
+		name = "Projects",
+	},
+	x = {
+		name = "Trouble",
 	},
 	g = {
-		name="Git"
+		name = "Git",
 	},
 	c = {
-		name="LSP"
+		name = "LSP",
 	},
 	h = {
-		name="Harpoon"
+		name = "Harpoon",
 	},
-    w = { "<C-w>", "Window" },
-
-}, {prefix="<leader>"})
+	w = { "<C-w>", "Window" },
+	s = { "<Cmd>w<CR>", "Save" },
+}, { prefix = "<leader>" })
