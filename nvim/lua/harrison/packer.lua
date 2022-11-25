@@ -27,7 +27,7 @@ return require("packer").startup(function(use)
 	use({ "rafamadriz/friendly-snippets" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 
-	use({ "glepnir/lspsaga.nvim" })
+	-- use({ "glepnir/lspsaga.nvim" })
 	use("kyazdani42/nvim-web-devicons")
 
 	use({
@@ -137,6 +137,17 @@ return require("packer").startup(function(use)
 
 	use("windwp/nvim-ts-autotag")
 	use("windwp/nvim-autopairs")
+	use({
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("todo-comments").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
 
 	use({
 		"lukas-reineke/indent-blankline.nvim",
