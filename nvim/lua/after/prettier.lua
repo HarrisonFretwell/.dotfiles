@@ -10,10 +10,10 @@ null_ls.setup({
 		null_ls.builtins.diagnostics.eslint_d.with({
 			diagnostics_format = "[eslint] #{m}\n(#{c})",
 		}),
-		require("typescript.extensions.null-ls.code-actions"),
 		null_ls.builtins.formatting.prettierd,
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.formatting.rustfmt,
+		require("typescript.extensions.null-ls.code-actions"),
 	},
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then

@@ -70,14 +70,12 @@ return require("packer").startup(function(use)
 		config = function()
 			require("noice").setup({
 				lsp = {
-					-- override markdown rendering so that **cmp** and other plugins use **Treesitter**
 					override = {
 						["vim.lsp.util.convert_input_to_markdown_lines"] = true,
 						["vim.lsp.util.stylize_markdown"] = true,
 						["cmp.entry.get_documentation"] = true,
 					},
 				},
-				-- you can enable a preset for easier configuration
 				presets = {
 					bottom_search = true, -- use a classic bottom cmdline for search
 					command_palette = true, -- position the cmdline and popupmenu together
@@ -88,18 +86,12 @@ return require("packer").startup(function(use)
 			})
 		end,
 		requires = {
-			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
 			"MunifTanjim/nui.nvim",
-			-- OPTIONAL:
-			--   `nvim-notify` is only needed, if you want to use the notification view.
-			--   If not available, we use `mini` as the fallback
 			"rcarriga/nvim-notify",
 		},
 	})
 
-	use({
-		"goolord/alpha-nvim",
-	})
+	use({ "goolord/alpha-nvim" })
 
 	--Themes
 	use("cocopon/iceberg.vim")
@@ -134,6 +126,7 @@ return require("packer").startup(function(use)
 	})
 	use({ "nvim-telescope/telescope-project.nvim" })
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
+	use({ "nvim-telescope/telescope-ui-select.nvim" })
 
 	use("windwp/nvim-ts-autotag")
 	use("windwp/nvim-autopairs")
@@ -141,11 +134,7 @@ return require("packer").startup(function(use)
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
 		config = function()
-			require("todo-comments").setup({
-				-- your configuration comes here
-				-- or leave it empty to use the default settings
-				-- refer to the configuration section below
-			})
+			require("todo-comments").setup()
 		end,
 	})
 
@@ -161,11 +150,6 @@ return require("packer").startup(function(use)
 		end,
 	})
 	use("tpope/vim-surround")
-	-- use({
-	-- 	"ggandor/leap.nvim",
-	-- 	config = function()
-	-- 		require("leap").add_default_mappings()
-	-- 	end,
 	-- })
 	use({
 		"https://gitlab.com/madyanov/svart.nvim",
