@@ -38,6 +38,12 @@ require("typescript").setup({
 nvim_lsp.sumneko_lua.setup({
 	on_attach = on_attach,
 })
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+nvim_lsp.cssls.setup({
+	capabilities = capabilities,
+})
 
 -- Rust
 -- nvim_lsp.rust_analyzer.setup{}

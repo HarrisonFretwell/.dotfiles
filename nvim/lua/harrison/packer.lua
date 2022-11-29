@@ -27,7 +27,6 @@ return require("packer").startup(function(use)
 	use({ "rafamadriz/friendly-snippets" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 
-	-- use({ "glepnir/lspsaga.nvim" })
 	use("kyazdani42/nvim-web-devicons")
 
 	use({
@@ -55,13 +54,20 @@ return require("packer").startup(function(use)
 							dismiss = "<C-]>",
 						},
 					},
-					filetypes = {
-						javascript = true, -- allow specific filetype
-						typescript = true, -- allow specific filetype
-						["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
-					},
+					-- filetypes = {
+					-- 	javascript = true,
+					-- 	typescript = true,
+					-- 	typescriptreact = true,
+					-- 	-- ["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
+					-- },
 				})
 			end, 100)
+		end,
+	})
+	use({
+		"folke/twilight.nvim",
+		config = function()
+			require("twilight").setup({})
 		end,
 	})
 
