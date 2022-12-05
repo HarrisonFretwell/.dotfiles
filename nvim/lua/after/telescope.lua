@@ -1,11 +1,14 @@
-local builtin = require("telescope.builtin")
-local projects = require("telescope").load_extension("project")
 local status, telescope = pcall(require, "telescope")
 if not status then
 	return
 end
+
+telescope.load_extension("project")
+telescope.load_extension("file_browser")
+telescope.load_extension("ui-select")
+local telescope_builtin = require("telescope.builtin")
 local actions = require("telescope.actions")
-local builtin = require("telescope.builtin")
+local trouble = require("trouble.providers.telescope")
 
 local function telescope_buffer_dir()
 	return vim.fn.expand("%:p:h")
@@ -13,10 +16,9 @@ end
 
 local fb_actions = require("telescope").extensions.file_browser.actions
 
-vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
-vim.keymap.set("n", "<leader><leader>", builtin.find_files, { desc = "Find files" })
-vim.keymap.set("n", "<leader>fs", builtin.live_grep, { desc = "Search files" })
-vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Open buffers" })
+vim.keymap.set("n", "<leader><leader>", telescope_builtin.find_files, { desc = "Find files" })
+vim.keymap.set("n", "<leader>fs", telescope_builtin.live_grep, { desc = "Search files" })
+vim.keymap.set("n", "<leader>fb", telescope_builtin.buffers, { desc = "Open buffers" })
 vim.keymap.set("n", "<leader>fl", function()
 	telescope.extensions.file_browser.file_browser({
 		path = "%:p:h",
@@ -29,8 +31,7 @@ vim.keymap.set("n", "<leader>fl", function()
 		layout_config = { height = 40 },
 	})
 end, { desc = "Open file browser" })
-vim.keymap.set("n", "<leader>k", builtin.help_tags, { desc = "Command list" })
-vim.keymap.set("n", "<leader>pf", "<cmd>Telescope find_project_files<CR>", { desc = "Find project files" })
+vim.keymap.set("n", "<leader>k", telescope_builtin.help_tags, { desc = "Command list" })
 vim.keymap.set("n", "<leader>pp", "<cmd>Telescope project<CR>", { desc = "Projects" })
 vim.keymap.set("n", "<leader>pw", "<cmd>Telescope change_working_directory<CR>", { desc = "Change working directory" })
 
@@ -39,7 +40,9 @@ telescope.setup({
 		mappings = {
 			n = {
 				["q"] = actions.close,
+				["<c-t>"] = trouble.open_with_trouble,
 			},
+			i = { ["<c-t>"] = trouble.open_with_trouble },
 		},
 	},
 	extensions = {
@@ -64,50 +67,14 @@ telescope.setup({
 				},
 			},
 		},
+		frecency = {
+			show_unindexed = false,
+			default_workspace = "CWD",
+		},
 		["ui-select"] = {
 			require("telescope.themes").get_dropdown({
 				-- even more opts
 			}),
-
-			-- pseudo code / specification for writing custom displays, like the one
-			-- for "codeactions"
-			-- specific_opts = {
-			--   [kind] = {
-			--     make_indexed = function(items) -> indexed_items, width,
-			--     make_displayer = function(widths) -> displayer
-			--     make_display = function(displayer) -> function(e)
-			--     make_ordinal = function(e) -> string
-			--   },
-			--   -- for example to disable the custom builtin "codeactions" display
-			--      do the following
-			--   codeactions = false,
-			-- }
-		},
-	},
-})
-telescope.load_extension("file_browser")
-telescope.load_extension("ui-select")
-
-vim.keymap.set("n", "<leader>sf", function()
-	telescope.extensions.file_browser.file_browser({
-		path = "%:p:h",
-		cwd = telescope_buffer_dir(),
-		respect_gitignore = false,
-		hidden = true,
-		grouped = true,
-		previewer = false,
-		initial_mode = "normal",
-		layout_config = { height = 40 },
-	})
-end)
-local actions = require("telescope.actions")
-local trouble = require("trouble.providers.telescope")
-
-telescope.setup({
-	defaults = {
-		mappings = {
-			i = { ["<c-t>"] = trouble.open_with_trouble },
-			n = { ["<c-t>"] = trouble.open_with_trouble },
 		},
 	},
 })
