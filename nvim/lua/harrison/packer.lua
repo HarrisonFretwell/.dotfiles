@@ -169,6 +169,14 @@ return require("packer").startup(function(use)
 	-- Rust
 	use("simrat39/rust-tools.nvim")
 
+	-- Markdown
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 	use("kdheepak/lazygit.nvim")
