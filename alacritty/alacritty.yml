@@ -268,8 +268,8 @@ live_config_reload: true
 #     - --login
 
 shell:
-  program: /bin/zsh
-  # program: /opt/homebrew/bin/fish
+  # program: /bin/zsh
+  program: /opt/homebrew/bin/fish
 # Key bindings
 #
 # Each binding is defined as an object with some properties. Most of the

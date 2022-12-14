@@ -24,9 +24,8 @@ vim.keymap.set("n", "<leader>fl", function()
 		path = "%:p:h",
 		cwd = telescope_buffer_dir(),
 		respect_gitignore = false,
-		hidden = true,
-		grouped = true,
-		previewer = false,
+		-- grouped = true,
+		-- previewer = true,
 		initial_mode = "normal",
 		layout_config = { height = 40 },
 	})

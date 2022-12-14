@@ -60,6 +60,8 @@ rt.setup({
 		end,
 	},
 })
+-- Markdown
+require("lspconfig").marksman.setup({})
 
 local status, cmp = pcall(require, "cmp")
 if not status then
