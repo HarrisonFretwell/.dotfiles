@@ -191,7 +191,7 @@ debug:
 #
 visual_bell:
   animation: EaseOutExpo
-  duration: 0
+  duration: 1
 
 # Background opacity
 window_opacity: 1.0
