@@ -19,3 +19,6 @@ mongocli.toml
 nvim/.git-old
 nvim/pack/github/start/copilot.vim
 nvim/plugin
+fish/functions
+fish/conf.d
+fish/completions
