@@ -27,6 +27,9 @@ return require("packer").startup(function(use)
 	use({ "rafamadriz/friendly-snippets" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 
+	-- Undo history
+	use("mbbill/undotree")
+
 	use("kyazdani42/nvim-web-devicons")
 
 	use({
