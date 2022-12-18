@@ -21,7 +21,10 @@ vim.opt.updatetime = 50
 --Always have at least 12 lines towards the bottom
 vim.opt.scrolloff = 12
 
+vim.opt.swapfile = false
+vim.opt.backup = false
 --Persist undo history
-vim.opt.persistent_undo = true
+vim.opt.undodir = os.getenv("HOME") .. "/.temp/undodir"
+vim.opt.undofile = true
 
 vim.g.mapleader = " "
