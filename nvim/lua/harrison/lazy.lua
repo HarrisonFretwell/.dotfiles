@@ -1,46 +1,53 @@
--- Only required if you have packer configured as `opt`packer
-vim.cmd([[packadd packer.nvim]])
-
-return require("packer").startup(function(use)
-	use("wbthomason/packer.nvim")
-
-	use("nvim-lualine/lualine.nvim")
-	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-
-	use({ "neovim/nvim-lspconfig" })
-	use("jose-elias-alvarez/typescript.nvim")
-	use({ "williamboman/mason.nvim" })
-	use({ "williamboman/mason-lspconfig.nvim" })
-
-	use({ "onsails/lspkind.nvim" })
-	use("mfussenegger/nvim-dap")
-	-- Autocompletion
-	use({ "hrsh7th/nvim-cmp" })
-	use({ "hrsh7th/cmp-buffer" })
-	use({ "hrsh7th/cmp-path" })
-	use({ "saadparwaiz1/cmp_luasnip" })
-	use({ "hrsh7th/cmp-nvim-lsp" })
-	use({ "hrsh7th/cmp-nvim-lua" })
-
-	-- Snippets
-	use({ "L3MON4D3/LuaSnip" })
-	use({ "rafamadriz/friendly-snippets" })
-	use({ "jose-elias-alvarez/null-ls.nvim" })
-
-	-- Undo history
-	use("mbbill/undotree")
-
-	use("kyazdani42/nvim-web-devicons")
-
-	use({
+require("lazy").setup({
+	"folke/which-key.nvim",
+	{ "nvim-telescope/telescope.nvim", dependencies = {
+		"nvim-lua/plenary.nvim",
+	} },
+	{ "nvim-telescope/telescope-project.nvim" },
+	"nvim-telescope/telescope-file-browser.nvim",
+	"nvim-telescope/telescope-ui-select.nvim",
+	{
+		"dstein64/vim-startuptime",
+		cmd = "StartupTime",
+	},
+	{
 		"folke/trouble.nvim",
-		requires = "kyazdani42/nvim-web-devicons",
+		dependencies = "kyazdani42/nvim-web-devicons",
 		config = function()
 			require("trouble").setup({})
 		end,
-	})
-
-	use({
+	},
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		lazy = false,
+		config = function()
+			require("catppuccin").setup({
+				flavour = "mocha", -- mocha, macchiato, frappe, latte
+			})
+			vim.api.nvim_command("colorscheme catppuccin")
+		end,
+	},
+	"nvim-lualine/lualine.nvim",
+	{ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
+	{ "neovim/nvim-lspconfig" },
+	"jose-elias-alvarez/typescript.nvim",
+	{ "williamboman/mason.nvim" },
+	{ "williamboman/mason-lspconfig.nvim" },
+	{ "onsails/lspkind.nvim" },
+	"mfussenegger/nvim-dap",
+	{ "hrsh7th/nvim-cmp" },
+	{ "hrsh7th/cmp-buffer" },
+	{ "hrsh7th/cmp-path" },
+	{ "saadparwaiz1/cmp_luasnip" },
+	{ "hrsh7th/cmp-nvim-lsp" },
+	{ "hrsh7th/cmp-nvim-lua" },
+	{ "L3MON4D3/LuaSnip" },
+	{ "rafamadriz/friendly-snippets" },
+	{ "jose-elias-alvarez/null-ls.nvim" },
+	"mbbill/undotree",
+	"kyazdani42/nvim-web-devicons",
+	{
 		"zbirenbaum/copilot.lua",
 		event = "VimEnter",
 		config = function()
@@ -66,15 +73,14 @@ return require("packer").startup(function(use)
 				})
 			end, 100)
 		end,
-	})
-	use({
+	},
+	{
 		"folke/twilight.nvim",
 		config = function()
 			require("twilight").setup({})
 		end,
-	})
-
-	use({
+	},
+	{
 		"folke/noice.nvim",
 		config = function()
 			require("noice").setup({
@@ -86,7 +92,7 @@ return require("packer").startup(function(use)
 					},
 				},
 				presets = {
-					bottom_search = true, -- use a classic bottom cmdline for search
+					bottom_search = true, --  a classic bottom cmdline for search
 					command_palette = true, -- position the cmdline and popupmenu together
 					long_message_to_split = true, -- long messages will be sent to a split
 					inc_rename = false, -- enables an input dialog for inc-rename.nvim
@@ -94,14 +100,13 @@ return require("packer").startup(function(use)
 				},
 			})
 		end,
-		requires = {
+		dependencies = {
 			"MunifTanjim/nui.nvim",
 			"rcarriga/nvim-notify",
 		},
-	})
-
-	use({ "goolord/alpha-nvim" })
-	use({
+	},
+	{ "goolord/alpha-nvim" },
+	{
 		"folke/drop.nvim",
 		event = "VimEnter",
 		config = function()
@@ -109,54 +114,34 @@ return require("packer").startup(function(use)
 			local theme = ({ "stars", "snow", "xmas" })[math.random(1, 3)]
 			require("drop").setup({ theme = theme })
 		end,
-	})
-
-	--Themes
-	use("cocopon/iceberg.vim")
-	use("arcticicestudio/nord-vim")
-	use("rakr/vim-two-firewatch")
-
-	use({
-		"catppuccin/nvim",
-		as = "catppuccin",
-		config = function()
-			require("catppuccin").setup({
-				flavour = "mocha", -- mocha, macchiato, frappe, latte
-			})
-			vim.api.nvim_command("colorscheme catppuccin")
-		end,
-	})
-
-	use("tpope/vim-commentary")
-	-- Navgiation
-	use({
+	},
+	"tpope/vim-commentary",
+	{
 		"ThePrimeagen/harpoon",
 		config = function()
 			require("harpoon").setup()
 		end,
-	})
-	use({
+	},
+	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.0",
-		requires = {
+		dependencies = {
 			{ "nvim-lua/plenary.nvim" },
 		},
-	})
-	use({ "nvim-telescope/telescope-project.nvim" })
-	use({ "nvim-telescope/telescope-file-browser.nvim" })
-	use({ "nvim-telescope/telescope-ui-select.nvim" })
-
-	use("windwp/nvim-ts-autotag")
-	use("windwp/nvim-autopairs")
-	use({
+	},
+	{ "nvim-telescope/telescope-project.nvim" },
+	{ "nvim-telescope/telescope-file-browser.nvim" },
+	{ "nvim-telescope/telescope-ui-select.nvim" },
+	"windwp/nvim-ts-autotag",
+	"windwp/nvim-autopairs",
+	{
 		"folke/todo-comments.nvim",
-		requires = "nvim-lua/plenary.nvim",
+		dependencies = "nvim-lua/plenary.nvim",
 		config = function()
 			require("todo-comments").setup()
 		end,
-	})
-
-	use({
+	},
+	{
 		"lukas-reineke/indent-blankline.nvim",
 		event = "VimEnter",
 		config = function()
@@ -166,36 +151,23 @@ return require("packer").startup(function(use)
 				show_current_context_start = true,
 			})
 		end,
-	})
-	use("tpope/vim-surround")
-	-- })
-	use({
-		"https://gitlab.com/madyanov/svart.nvim",
+	},
+	"tpope/vim-surround",
+	{
+		url = "https://gitlab.com/madyanov/svart.nvim",
 		as = "svart.nvim",
-	})
-
-	-- Prettier
-	use("MunifTanjim/prettier.nvim")
-
-	-- Language Specific
-	-- Rust
-	use("simrat39/rust-tools.nvim")
-
-	-- Markdown
-	use({
+	},
+	"MunifTanjim/prettier.nvim",
+	"simrat39/rust-tools.nvim",
+	{
 		"iamcco/markdown-preview.nvim",
 		run = function()
 			vim.fn["mkdp#util#install"]()
 		end,
-	})
-
-	-- Git
-	use("lewis6991/gitsigns.nvim")
-	use("kdheepak/lazygit.nvim")
-
-	use("folke/which-key.nvim")
-
-	use({
+	},
+	"lewis6991/gitsigns.nvim",
+	"kdheepak/lazygit.nvim",
+	{
 		"akinsho/toggleterm.nvim",
 		tag = "*",
 		config = function()
@@ -203,5 +175,5 @@ return require("packer").startup(function(use)
 				open_mapping = [[<c-\>]],
 			})
 		end,
-	})
-end)
+	},
+})
