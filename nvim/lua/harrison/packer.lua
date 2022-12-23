@@ -101,6 +101,15 @@ return require("packer").startup(function(use)
 	})
 
 	use({ "goolord/alpha-nvim" })
+	use({
+		"folke/drop.nvim",
+		event = "VimEnter",
+		config = function()
+			math.randomseed(os.time())
+			local theme = ({ "stars", "snow", "xmas" })[math.random(1, 3)]
+			require("drop").setup({ theme = theme })
+		end,
+	})
 
 	--Themes
 	use("cocopon/iceberg.vim")

@@ -18,7 +18,7 @@ local fb_actions = require("telescope").extensions.file_browser.actions
 
 vim.keymap.set("n", "<leader><leader>", telescope_builtin.find_files, { desc = "Find files" })
 vim.keymap.set("n", "<leader>fs", telescope_builtin.live_grep, { desc = "Search files" })
-vim.keymap.set("n", "<leader>fb", telescope_builtin.buffers, { desc = "Open buffers" })
+vim.keymap.set("n", "<leader><", telescope_builtin.buffers, { desc = "Open buffers" })
 vim.keymap.set("n", "<leader>fl", function()
 	telescope.extensions.file_browser.file_browser({
 		path = "%:p:h",
