@@ -1,11 +1,16 @@
 require("lazy").setup({
 	"folke/which-key.nvim",
-	{ "nvim-telescope/telescope.nvim", dependencies = {
-		"nvim-lua/plenary.nvim",
-	} },
+	{ "nvim-telescope/telescope.nvim", dependencies = "nvim-lua/plenary.nvim" },
 	{ "nvim-telescope/telescope-project.nvim" },
 	"nvim-telescope/telescope-file-browser.nvim",
 	"nvim-telescope/telescope-ui-select.nvim",
+	{
+		"nvim-neorg/neorg",
+		run = ":Neorg sync-parsers",
+		lazy = false,
+	},
+	"VonHeikemen/lsp-zero.nvim",
+	"nvim-neorg/neorg-telescope",
 	{
 		"dstein64/vim-startuptime",
 		cmd = "StartupTime",
@@ -17,6 +22,7 @@ require("lazy").setup({
 			require("trouble").setup({})
 		end,
 	},
+	"rebelot/kanagawa.nvim",
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
@@ -25,7 +31,14 @@ require("lazy").setup({
 			require("catppuccin").setup({
 				flavour = "mocha", -- mocha, macchiato, frappe, latte
 			})
-			vim.api.nvim_command("colorscheme catppuccin")
+			--vim.api.nvim_command("colorscheme catppuccin")
+		end,
+	},
+	{
+		"folke/zen-mode.nvim",
+		lazy = false,
+		config = function()
+			require("zen-mode").setup({})
 		end,
 	},
 	"nvim-lualine/lualine.nvim",
@@ -106,15 +119,6 @@ require("lazy").setup({
 		},
 	},
 	{ "goolord/alpha-nvim" },
-	{
-		"folke/drop.nvim",
-		event = "VimEnter",
-		config = function()
-			math.randomseed(os.time())
-			local theme = ({ "stars", "snow", "xmas" })[math.random(1, 3)]
-			require("drop").setup({ theme = theme })
-		end,
-	},
 	"tpope/vim-commentary",
 	{
 		"ThePrimeagen/harpoon",
@@ -122,16 +126,6 @@ require("lazy").setup({
 			require("harpoon").setup()
 		end,
 	},
-	{
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.0",
-		dependencies = {
-			{ "nvim-lua/plenary.nvim" },
-		},
-	},
-	{ "nvim-telescope/telescope-project.nvim" },
-	{ "nvim-telescope/telescope-file-browser.nvim" },
-	{ "nvim-telescope/telescope-ui-select.nvim" },
 	"windwp/nvim-ts-autotag",
 	"windwp/nvim-autopairs",
 	{

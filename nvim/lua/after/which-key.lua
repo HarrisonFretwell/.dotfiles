@@ -23,6 +23,9 @@ wk.register({
 	w = { "<C-w>", "Window" },
 	s = { "<Cmd>w<CR>", "Save" },
 	i = { "<Cmd>MarkdownPreview<CR>", "Markdown Preview" },
+	n = {
+		name = "Neorg",
+	},
 }, { prefix = "<leader>" })
 
 vim.keymap.set("n", "d", '"_d', { desc = "Delete" })

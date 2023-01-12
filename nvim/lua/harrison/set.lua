@@ -28,3 +28,4 @@ vim.opt.undodir = os.getenv("HOME") .. "/.temp/undodir"
 vim.opt.undofile = true
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = ";"
