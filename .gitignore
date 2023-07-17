@@ -22,3 +22,4 @@ nvim/plugin
 fish/functions
 fish/conf.d
 fish/completions
+op

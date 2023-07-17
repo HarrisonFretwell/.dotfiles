@@ -3,6 +3,25 @@ if not status then
 	return
 end
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+local prettier = require("prettier")
+
+prettier.setup({
+  bin = 'prettierd',
+  filetypes = {
+    "css",
+    "graphql",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "less",
+    "markdown",
+    "scss",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+  },
+})
 
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Formatting-on-save
 null_ls.setup({
@@ -11,7 +30,8 @@ null_ls.setup({
 			diagnostics_format = "[eslint] #{m}\n(#{c})",
 		}),
 		null_ls.builtins.formatting.prettierd,
-		null_ls.builtins.formatting.stylua,
+		-- null_ls.builtins.formatting.stylua,
+		-- null_ls.builtins.formatting.eslint_d,
 		null_ls.builtins.formatting.rustfmt,
 		require("typescript.extensions.null-ls.code-actions"),
 	},

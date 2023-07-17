@@ -12,6 +12,7 @@ ts.setup({
 		enable = true,
 		disable = {},
 	},
+	auto_install = true,
 	ensure_installed = {
 		"tsx",
 		"javascript",

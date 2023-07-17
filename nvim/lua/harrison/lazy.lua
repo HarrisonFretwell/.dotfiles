@@ -4,13 +4,13 @@ require("lazy").setup({
 	{ "nvim-telescope/telescope-project.nvim" },
 	"nvim-telescope/telescope-file-browser.nvim",
 	"nvim-telescope/telescope-ui-select.nvim",
-	{
-		"nvim-neorg/neorg",
-		run = ":Neorg sync-parsers",
-		lazy = false,
-	},
+	-- {
+	-- 	"nvim-neorg/neorg",
+	-- 	run = ":Neorg sync-parsers",
+	-- 	lazy = false,
+	-- },
 	"VonHeikemen/lsp-zero.nvim",
-	"nvim-neorg/neorg-telescope",
+	-- "nvim-neorg/neorg-telescope",
 	{
 		"dstein64/vim-startuptime",
 		cmd = "StartupTime",
@@ -60,64 +60,64 @@ require("lazy").setup({
 	{ "jose-elias-alvarez/null-ls.nvim" },
 	"mbbill/undotree",
 	"kyazdani42/nvim-web-devicons",
-	{
-		"zbirenbaum/copilot.lua",
-		event = "VimEnter",
-		config = function()
-			vim.defer_fn(function()
-				require("copilot").setup({
-					suggestion = {
-						enabled = true,
-						auto_trigger = true,
-						debounce = 75,
-						keymap = {
-							accept = "<C-F>",
-							next = "<M-]>",
-							prev = "<M-[>",
-							dismiss = "<C-]>",
-						},
-					},
-					-- filetypes = {
-					-- 	javascript = true,
-					-- 	typescript = true,
-					-- 	typescriptreact = true,
-					-- 	-- ["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
-					-- },
-				})
-			end, 100)
-		end,
-	},
+	-- {
+	-- 	"zbirenbaum/copilot.lua",
+	-- 	event = "VimEnter",
+	-- 	config = function()
+	-- 		vim.defer_fn(function()
+	-- 			require("copilot").setup({
+	-- 				suggestion = {
+	-- 					enabled = true,
+	-- 					auto_trigger = true,
+	-- 					debounce = 75,
+	-- 					keymap = {
+	-- 						accept = "<C-F>",
+	-- 						next = "<M-]>",
+	-- 						prev = "<M-[>",
+	-- 						dismiss = "<C-]>",
+	-- 					},
+	-- 				},
+	-- 				-- filetypes = {
+	-- 				-- 	javascript = true,
+	-- 				-- 	typescript = true,
+	-- 				-- 	typescriptreact = true,
+	-- 				-- 	-- ["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
+	-- 				-- },
+	-- 			})
+	-- 		end, 100)
+	-- 	end,
+	-- },
 	{
 		"folke/twilight.nvim",
 		config = function()
 			require("twilight").setup({})
 		end,
 	},
-	{
-		"folke/noice.nvim",
-		config = function()
-			require("noice").setup({
-				lsp = {
-					override = {
-						["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-						["vim.lsp.util.stylize_markdown"] = true,
-						["cmp.entry.get_documentation"] = true,
-					},
-				},
-				presets = {
-					bottom_search = true, --  a classic bottom cmdline for search
-					command_palette = true, -- position the cmdline and popupmenu together
-					long_message_to_split = true, -- long messages will be sent to a split
-					inc_rename = false, -- enables an input dialog for inc-rename.nvim
-					lsp_doc_border = true, -- add a border to hover docs and signature help
-				},
-			})
-		end,
-		dependencies = {
-			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify",
-		},
-	},
+	-- {
+	-- 	"folke/noice.nvim",
+	-- 	config = function()
+	-- 		require("noice").setup({
+	-- 			lsp = {
+	-- 				override = {
+	-- 					["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+	-- 					["vim.lsp.util.stylize_markdown"] = true,
+	-- 					["cmp.entry.get_documentation"] = true,
+	-- 				},
+	-- 			},
+	-- 			presets = {
+	-- 				bottom_search = true, --  a classic bottom cmdline for search
+	-- 				command_palette = true, -- position the cmdline and popupmenu together
+	-- 				long_message_to_split = true, -- long messages will be sent to a split
+	-- 				inc_rename = false, -- enables an input dialog for inc-rename.nvim
+	-- 				lsp_doc_border = true, -- add a border to hover docs and signature help
+	-- 			},
+	-- 		})
+	-- 	end,
+	-- 	dependencies = {
+	-- 		"MunifTanjim/nui.nvim",
+	-- 		"rcarriga/nvim-notify",
+	-- 	},
+	-- },
 	{ "goolord/alpha-nvim" },
 	"tpope/vim-commentary",
 	{
@@ -151,7 +151,9 @@ require("lazy").setup({
 		url = "https://gitlab.com/madyanov/svart.nvim",
 		as = "svart.nvim",
 	},
-	"MunifTanjim/prettier.nvim",
+	{
+		"MunifTanjim/prettier.nvim",
+	},
 	"simrat39/rust-tools.nvim",
 	{
 		"iamcco/markdown-preview.nvim",
@@ -161,13 +163,4 @@ require("lazy").setup({
 	},
 	"lewis6991/gitsigns.nvim",
 	"kdheepak/lazygit.nvim",
-	{
-		"akinsho/toggleterm.nvim",
-		tag = "*",
-		config = function()
-			require("toggleterm").setup({
-				open_mapping = [[<c-\>]],
-			})
-		end,
-	},
 })

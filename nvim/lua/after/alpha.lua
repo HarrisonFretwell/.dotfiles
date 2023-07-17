@@ -17,7 +17,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("<Leader> c n", "  > New File", ":ene <BAR> startinsert <CR>"),
 	dashboard.button("<Leader> f f", "  > Find Files", ":cd $HOME/Documents | Telescope find_files<CR>"),
 	dashboard.button("<Leader> p p", "  > Find Projects", "<Cmd> Telescope project<CR>"),
-	dashboard.button("<Leader> u p", "  > Update Plugins", ":PackerSync<CR>"),
+	dashboard.button("<Leader> u p", "  > Update Plugins", ":Lazy sync<CR>"),
 	dashboard.button("<Leader> f h", "  > Recently Opened Files", ":Telescope oldfiles<CR>"),
 	dashboard.button("<Leader> q q", "  > Quit Neovim", ":qa<CR>"),
 }

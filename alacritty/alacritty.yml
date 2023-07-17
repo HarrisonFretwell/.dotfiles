@@ -1,7 +1,7 @@
 import:
   # uncomment the flavour you want below:
-  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
-#  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+ - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
 #  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
 # set by alacritty it self.
@@ -46,7 +46,7 @@ window:
   #     - none: Neither borders nor title bar
   #     - buttonless: Title bar, transparent background and title bar buttons
   #     - transparent: Title bar, transparent background, but no title bar buttons
-  decorations: buttonless
+  decorations: full
 
   # Startup Mode (changes require restart)
   #
@@ -71,7 +71,7 @@ scrolling:
   multiplier: 3
 
   # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: false
+  auto_scroll: true
 
 # Display tabs using this many cells (changes require restart)
 tabspaces: 4
@@ -85,7 +85,7 @@ font:
   normal:
     # family: "Fira Code"
     # family: "Roboto Mono"
-    family: "MonoLisa Nerd Font"
+    family: "Hack Nerd Font"
     # family: "Droid Sans Mono"
     # Style can be specified to pick a specific face.
     # style: Regular
@@ -93,7 +93,7 @@ font:
   # The bold font face
   bold:
     # family: "Roboto Mono"
-    family: "MonoLisa Nerd Font"
+    family: "Hack Nerd Font"
     # family: "Droid Sans Mono"
     # Style can be specified to pick a specific face.
     style: Bold
@@ -102,7 +102,7 @@ font:
   italic:
     # family: "Roboto Mono"
     # family: "Droid Sans Mono"
-    family: "MonoLisa Nerd Font"
+    family: "Hack Nerd Font"
     # Style can be specified to pick a specific face.
     style: Italic
 
@@ -167,80 +167,80 @@ debug:
 # dim_foreground: '0x9a9a9a'
 # bright_foreground: '0xffffff'
 
-# Visual Bell
-#
-# Any time the BEL code is received, Alacritty "rings" the visual bell. Once
-# rung, the terminal background will be set to white and transition back to the
-# default background color. You can control the rate of this transition by
-# setting the `duration` property (represented in milliseconds). You can also
-# configure the transition function by setting the `animation` property.
-#
-# Possible values for `animation`
-# `Ease`
-# `EaseOut`
-# `EaseOutSine`
-# `EaseOutQuad`
-# `EaseOutCubic`
-# `EaseOutQuart`
-# `EaseOutQuint`
-# `EaseOutExpo`
-# `EaseOutCirc`
-# `Linear`
-#
-# To completely disable the visual bell, set its duration to 0.
-#
-visual_bell:
-  animation: EaseOutExpo
-  duration: 1
+## Visual Bell
+##
+## Any time the BEL code is received, Alacritty "rings" the visual bell. Once
+## rung, the terminal background will be set to white and transition back to the
+## default background color. You can control the rate of this transition by
+## setting the `duration` property (represented in milliseconds). You can also
+## configure the transition function by setting the `animation` property.
+##
+## Possible values for `animation`
+## `Ease`
+## `EaseOut`
+## `EaseOutSine`
+## `EaseOutQuad`
+## `EaseOutCubic`
+## `EaseOutQuart`
+## `EaseOutQuint`
+## `EaseOutExpo`
+## `EaseOutCirc`
+## `Linear`
+##
+## To completely disable the visual bell, set its duration to 0.
+##
+#visual_bell:
+#  animation: EaseOutExpo
+#  duration: 1
 
-# Background opacity
-window_opacity: 1.0
+## Background opacity
+#window_opacity: 1.0
 
-# Mouse bindings
-#
-# Currently doesn't support modifiers. Both the `mouse` and `action` fields must
-# be specified.
-#
-# Values for `mouse`:
-# - Middle
-# - Left
-# - Right
-# - Numeric identifier such as `5`
-#
-# Values for `action`:
-# - Paste
-# - PasteSelection
-# - Copy (TODO)
-mouse_bindings:
-  - { mouse: Middle, action: PasteSelection }
+## Mouse bindings
+##
+## Currently doesn't support modifiers. Both the `mouse` and `action` fields must
+## be specified.
+##
+## Values for `mouse`:
+## - Middle
+## - Left
+## - Right
+## - Numeric identifier such as `5`
+##
+## Values for `action`:
+## - Paste
+## - PasteSelection
+## - Copy (TODO)
+#mouse_bindings:
+#  - { mouse: Middle, action: PasteSelection }
 
-mouse:
-  # Click settings
-  #
-  # The `double_click` and `triple_click` settings control the time
-  # alacritty should wait for accepting multiple clicks as one double
-  # or triple click.
-  double_click: { threshold: 300 }
-  triple_click: { threshold: 300 }
+#mouse:
+#  # Click settings
+#  #
+#  # The `double_click` and `triple_click` settings control the time
+#  # alacritty should wait for accepting multiple clicks as one double
+#  # or triple click.
+#  double_click: { threshold: 300 }
+#  triple_click: { threshold: 300 }
 
-  hide_when_typing: false
-  # Faux Scrollback
-  #
-  # The `faux_scrollback_lines` setting controls the number
-  # of lines the terminal should scroll when the alternate
-  # screen buffer is active. This is used to allow mouse
-  # scrolling for applications like `man`.
-  #
-  # To disable this completely, set `faux_scrollback_lines` to 0.
-  # faux_scrollback_lines: 1
+#  hide_when_typing: false
+#  # Faux Scrollback
+#  #
+#  # The `faux_scrollback_lines` setting controls the number
+#  # of lines the terminal should scroll when the alternate
+#  # screen buffer is active. This is used to allow mouse
+#  # scrolling for applications like `man`.
+#  #
+#  # To disable this completely, set `faux_scrollback_lines` to 0.
+#  # faux_scrollback_lines: 1
 
-selection:
-  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+#selection:
+#  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
 
-  # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: false
+#  # When set to `true`, selected text will be copied to the primary clipboard.
+#  save_to_clipboard: false
 
-dynamic_title: true
+#dynamic_title: true
 
 cursor:
   # Style of the cursor
@@ -257,40 +257,40 @@ cursor:
 # Live config reload (changes require restart)
 live_config_reload: true
 
-# Shell
-#
-# You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
-# Entries in shell.args are passed unmodified as arguments to the shell.
-#
-# shell:
-#   program: /bin/bash
-#   args:
-#     - --login
+## Shell
+##
+## You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
+## Entries in shell.args are passed unmodified as arguments to the shell.
+##
+## shell:
+##   program: /bin/bash
+##   args:
+##     - --login
 
-shell:
-  # program: /bin/zsh
-  program: /opt/homebrew/bin/fish
-# Key bindings
-#
-# Each binding is defined as an object with some properties. Most of the
-# properties are optional. All of the alphabetical keys should have a letter for
-# the `key` value such as `V`. Function keys are probably what you would expect
-# as well (F1, F2, ..). The number keys above the main keyboard are encoded as
-# `Key1`, `Key2`, etc. Keys on the number pad are encoded `Number1`, `Number2`,
-# etc.  These all match the glutin::VirtualKeyCode variants.
-#
-# A list with all available `key` names can be found here:
-# https://docs.rs/glutin/*/glutin/enum.VirtualKeyCode.html#variants
-#
-# Possible values for `mods`
-# `Command`, `Super` refer to the super/command/windows key
-# `Control` for the control key
-# `Shift` for the Shift key
-# `Alt` and `Option` refer to alt/option
-#
-# mods may be combined with a `|`. For example, requiring control and shift
-# looks like:
-#
-# mods: Control|Shift
-#
-# The parser is currently quite sensitive t
+#shell:
+#  # program: /bin/zsh
+#  program: /opt/homebrew/bin/fish
+## Key bindings
+##
+## Each binding is defined as an object with some properties. Most of the
+## properties are optional. All of the alphabetical keys should have a letter for
+## the `key` value such as `V`. Function keys are probably what you would expect
+## as well (F1, F2, ..). The number keys above the main keyboard are encoded as
+## `Key1`, `Key2`, etc. Keys on the number pad are encoded `Number1`, `Number2`,
+## etc.  These all match the glutin::VirtualKeyCode variants.
+##
+## A list with all available `key` names can be found here:
+## https://docs.rs/glutin/*/glutin/enum.VirtualKeyCode.html#variants
+##
+## Possible values for `mods`
+## `Command`, `Super` refer to the super/command/windows key
+## `Control` for the control key
+## `Shift` for the Shift key
+## `Alt` and `Option` refer to alt/option
+##
+## mods may be combined with a `|`. For example, requiring control and shift
+## looks like:
+##
+## mods: Control|Shift
+##
+## The parser is currently quite sensitive t

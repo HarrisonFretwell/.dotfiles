@@ -18,6 +18,6 @@ require("after.alpha")
 require("after.git")
 require("after.harpoon")
 require("after.lualine")
-require("after.neorg")
+-- require("after.neorg")
 
 require("gitsigns").setup({})

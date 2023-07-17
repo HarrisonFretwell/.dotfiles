@@ -43,6 +43,10 @@ telescope.setup({
 			},
 			i = { ["<c-t>"] = trouble.open_with_trouble },
 		},
+		file_ignore_patterns = {
+			"node_modules",
+			"storybook-static",
+		},
 	},
 	extensions = {
 		file_browser = {
@@ -65,6 +69,9 @@ telescope.setup({
 					end,
 				},
 			},
+		},
+		project = {
+			order_by = "recent",
 		},
 		frecency = {
 			show_unindexed = false,

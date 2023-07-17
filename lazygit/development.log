@@ -1,0 +1,391 @@
+{"level":"info","msg":"language: en","time":"2023-03-07T15:27:29Z"}
+{"command":"git --version","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git rev-parse --git-dir","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git rev-parse --is-bare-repository","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"level":"info","msg":"starting main loop","time":"2023-03-07T15:27:29Z"}
+{"level":"info","msg":"Binary is not built with the buildBinary flag so we won't check for an update","time":"2023-03-07T15:27:29Z"}
+{"command":"git rev-parse --is-bare-repository","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2023-03-07T15:27:29Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git stash list -z --pretty='%gs'","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:27:29Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:27:29Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"level":"debug","msg":"Error getting git config value for key: status.showUntrackedFiles. Error: the key is not found for [git config --get --null status.showUntrackedFiles]","time":"2023-03-07T15:27:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:27:29Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:27:29Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:29Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:27:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:27:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:39Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:27:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:57Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:27:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:27:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:01Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:04Z"}
+{"level":"info","msg":"language: en","time":"2023-03-07T15:28:09Z"}
+{"command":"git --version","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git rev-parse --git-dir","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git rev-parse --is-bare-repository","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"level":"info","msg":"starting main loop","time":"2023-03-07T15:28:09Z"}
+{"level":"info","msg":"Binary is not built with the buildBinary flag so we won't check for an update","time":"2023-03-07T15:28:09Z"}
+{"command":"git rev-parse --is-bare-repository","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2023-03-07T15:28:09Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git stash list -z --pretty='%gs'","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:28:09Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:09Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:28:10Z"}
+{"level":"debug","msg":"Error getting git config value for key: status.showUntrackedFiles. Error: the key is not found for [git config --get --null status.showUntrackedFiles]","time":"2023-03-07T15:28:10Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:28:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:28:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:28:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:28:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:20Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:28:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:28:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:28:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:28:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:28:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:00Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:29:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:09Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:10Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:29:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:29:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:29:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:29:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:20Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:29:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:29:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:29:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:29:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:29:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:00Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:30:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:09Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:10Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:30:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:30:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:30:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:30:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:20Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:30:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:30:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:30:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:30:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:30:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:00Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:31:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:09Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:10Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:31:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:31:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:31:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:31:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:20Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:31:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:31:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:31:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:31:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:31:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:00Z"}
+{"command":"git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium refs/heads/feature/AB-123 --","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:09Z"}
+{"command":"git show --submodule --color=always --unified=3 --no-renames --stat -p 7119ac1875e074c7d6459a90cd42419d5545b35b","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:09Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:32:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:09Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:32:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:32:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:32:10Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:11Z"}
+{"command":"git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium refs/heads/feature/AB-123 --","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:11Z"}
+{"command":"git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium refs/heads/feature/AB-123 --","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:17Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:18Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:32:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:20Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --no-index -- /dev/null helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:22Z"}
+{"command":"git rm --cached --force -- \"helo2\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:22Z"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1","time":"2023-03-07T15:32:22Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: files","time":"2023-03-07T15:32:22Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:32:22Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:22Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --no-index -- /dev/null helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:22Z"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1","time":"2023-03-07T15:32:22Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --no-index -- /dev/null helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:22Z"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1","time":"2023-03-07T15:32:22Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:23Z"}
+{"command":"git add -- \"helo2\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:23Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: files","time":"2023-03-07T15:32:23Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:32:23Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:23Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:23Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:23Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:25Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:32:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:32:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:32:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:32:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:32:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:00Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:33:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:09Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:10Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:33:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:33:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:33:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:33:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:20Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:33:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:33:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:33:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:33:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:33:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:00Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:34:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:10Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:10Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:34:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:34:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:34:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:34:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:20Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:34:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:34:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:34:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:34:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:34:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:00Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:35:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:10Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:10Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:35:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:35:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:35:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:35:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:20Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:35:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:35:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:35:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:35:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:35:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:00Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:36:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:09Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:10Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:36:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:36:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:36:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:36:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:20Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:36:29Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:29Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:30Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:36:39Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:39Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:40Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:36:49Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:49Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:50Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:36:59Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:36:59Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:00Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:37:09Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:09Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:09Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:10Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:37:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:10Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:10Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:10Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:37:10Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:10Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:10Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:37:10Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:37:19Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:19Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:37:20Z"}
+{"level":"info","msg":"language: en","time":"2023-03-07T15:38:31Z"}
+{"command":"git --version","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git rev-parse --git-dir","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git rev-parse --is-bare-repository","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"level":"info","msg":"starting main loop","time":"2023-03-07T15:38:31Z"}
+{"level":"info","msg":"Binary is not built with the buildBinary flag so we won't check for an update","time":"2023-03-07T15:38:31Z"}
+{"command":"git rev-parse --is-bare-repository","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git fetch","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2023-03-07T15:38:31Z"}
+{"command":"git stash list -z --pretty='%gs'","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"level":"info","msg":"refreshing the following scopes in async mode: branches,commits,remotes,tags","time":"2023-03-07T15:38:31Z"}
+{"command":"git tag --list --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git branch -r","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:38:31Z"}
+{"level":"debug","msg":"Error getting git config value for key: status.showUntrackedFiles. Error: the key is not found for [git config --get --null status.showUntrackedFiles]","time":"2023-03-07T15:38:31Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git for-each-ref --sort=-committerdate --format=\"%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)\" refs/heads","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:38:31Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git merge-base \"HEAD\" \"HEAD\"@{u}","level":"error","msg":"fatal: no upstream configured for branch 'feature/AB-123'\n","time":"2023-03-07T15:38:31Z"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:31Z"}
+{"command":"git merge-base \"HEAD\" \"develop\"","level":"error","msg":"fatal: Not a valid object name develop\n","time":"2023-03-07T15:38:31Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:39Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:38:41Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:41Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:41Z"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2023-03-07T15:38:51Z"}
+{"command":"git status --untracked-files=all --porcelain -z","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:51Z"}
+{"command":"git diff --submodule --no-ext-diff --unified=3 --color=always --cached -- helo2","level":"debug","msg":"RunCommand","time":"2023-03-07T15:38:51Z"}
