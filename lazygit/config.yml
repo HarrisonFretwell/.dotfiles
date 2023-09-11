@@ -1,15 +1,16 @@
 git:
+  commitPrefixes:
+    editor-ui:
+      pattern: "^(KOA-[0-9]*).*"
+      replace: "$1 "
+  overrideGpg: true
   paging:
     colorArg: always
     pager: delta --dark --paging=never
-  commitPrefixes:
-    editor-ui: 
-      pattern: "^(NBB-[0-9]*).*"
-      replace: "$1 "
 gui:
   showIcons: true
 theme:
-  lightTheme: false 
+  lightTheme: false
   activeBorderColor:
     - "#a6da95" # Green
     - bold
@@ -26,6 +27,4 @@ theme:
   cherryPickedCommitFgColor:
     - "#8aadf4" # Blue
   unstagedChangesColor:
-    - red       # Red
-os:
-  editCommand: 'nvim'
+    - red # Red

@@ -1,5 +1,4 @@
-# How tos:
+# 💤 LazyVim
 
-## Lazy
-Package manager to install stuff:
-Run `:Lazy` to see all the options and update packages
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
