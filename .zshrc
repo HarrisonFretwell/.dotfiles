@@ -16,4 +16,12 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# Some fix for ctrl-h type keybinds in nvim
+infocmp $TERM | sed 's/kbs=^[hH]/kbs=\177/' > $TERM.ti
+tic $TERM.ti
+if has('nvim')
+    nmap <BS> :<C-u>TmuxNavigateLeft<CR>
+else
+    nmap <C-h> <C-w>h
+endif
 eval "$(starship init zsh)"
